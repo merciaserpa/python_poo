@@ -1,4 +1,4 @@
-#Estamos acessando o arquivo 'pessoa' e dentor desse arquivo estamos importando a classe 'Pessoa'
+#Estamos acessando o arquivo 'pessoa' e dentro desse arquivo estamos importando a classe 'Pessoa'
 from pessoa import Pessoa
 
 #Criando Objetos
