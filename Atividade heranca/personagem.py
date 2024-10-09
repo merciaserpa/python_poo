@@ -1,8 +1,8 @@
 class Personagem:
-    def __init__(self, nome, vida=100):
+    def __init__(self, nome, vida, rank):
         self._nome = nome
         self._vida = vida
-        self._rank = "Novato"
+        self._rank = rank
 
     def receberDano(self, dano):
         self._vida -= dano
@@ -20,8 +20,8 @@ class Personagem:
 
 
 class Heroi(Personagem):
-    def __init__(self, nome, identidade_secreta, energia=50):
-        super().__init__(nome)
+    def __init__(self, nome, vida, rank, identidade_secreta, energia):
+        super().__init__(nome, vida, rank)
         self._identidadeSecreta = identidade_secreta
         self._energia = energia
 
@@ -41,8 +41,8 @@ class Heroi(Personagem):
 
 
 class Vilao(Personagem):
-    def __init__(self, nome, malicia=70):
-        super().__init__(nome)
+    def __init__(self, nome, vida, rank, malicia):
+        super().__init__(nome, vida, rank)
         self._malicia = malicia
 
     def desferirGolpe(self, tipoGolpe):
