@@ -3,7 +3,8 @@ import sqlite3
 #Passo1 -  Conexão com o banco
 conexao = sqlite3.connect("departamento.db")
 
-#Passo2 - Verificar se a tabela existe ou não
+#Passo2 - Verificar se a tabela existe ou não,
+
 tabela = """
 CREATE TABLE IF NOT EXISTS funcionario(
     codigo INTEGER PRIMARY KEY AUTOINCREMENT,

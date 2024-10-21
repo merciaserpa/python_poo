@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS funcionario(
     codigo INTEGER PRIMARY KEY AUTOINCREMENT,
     nome VARCHAR(100),
     salario FLOAT,
-    cargo VARCHAR(100)    
+    cargo VARCHAR(100)
 );
 """
 consulta.execute(tabela)
